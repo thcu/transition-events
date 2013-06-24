@@ -1,0 +1,14 @@
+{
+  "name": "transition-events",
+  "repo": "thcu/transition-events",
+  "description": "css transition events name prefixed if needed",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}
