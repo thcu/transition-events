@@ -12,7 +12,7 @@ module.exports = transitionEventName;
 var transitionEvents = { /*'transitionstart': 'TransitionStart',*/ 'transitionend': 'TransitionEnd' }
   , testNode = document.createElement('p')
   , testProperty = 'transition'
-  , hasPrefix = testNode.style[testProperty] == undefined
+  , needPrefix = testNode.style[testProperty] == undefined
   , prefixes = ['o', 'MS', 'moz', 'webkit']
   , prefix = getPrefix()
   ;
@@ -39,7 +39,7 @@ function getPrefix() {
  */
 
 function transitionEventName (name) {
-    return hasPrefix
+    return needPrefix
         ? prefix + transitionEvents[name]
         : name
         ;
